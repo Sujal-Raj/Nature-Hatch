@@ -80,9 +80,9 @@ mongoose
 
 app.use(cors());
 
-// app.get("/", (req, res) => {
-//   res.send("Hello, World!");
-// });
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
 
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/user",require("./routes/userRoutes"));
